@@ -54,7 +54,7 @@ client.on('message', async message => {
 
     };
     if (command === 'type') {
-                const owner = client.users.cache.get(process.env.owner);
+                const owner = client.users.cache.get('532619967837896734');
         const { guild } = message
         const { name, region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
         const icon = guild.iconURL({ size: 2048, dynamic: true })
@@ -225,7 +225,7 @@ message.channel.send(Loading)
 
     if (command === 'help') {
         message.react('✅')
-        const owner = client.users.cache.get(process.env.owner);
+        const owner = client.users.cache.get('532619967837896734');
         var randomColor = Math.floor(Math.random() * 16777215).toString(16);
         const help = new Discord.MessageEmbed()
             .setTitle("Command List")
@@ -239,7 +239,7 @@ message.channel.send(Loading)
     }
     if (command === 'ping') {
         message.react('✅')
-        const owner = client.users.cache.get(process.env.owner);
+        const owner = client.users.cache.get('532619967837896734');
         var randomColor = Math.floor(Math.random() * 16777215).toString(16);
         const ping = Date.now() - message.createdTimestamp;
         const pingm = new Discord.MessageEmbed()
@@ -252,7 +252,7 @@ message.channel.send(Loading)
     }
     if (command === 'server') {
         message.react('✅')
-        const owner = client.users.cache.get(process.env.owner);
+        const owner = client.users.cache.get('532619967837896734');
         const { guild } = message
         const { name, region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
         const icon = guild.iconURL({ size: 2048, dynamic: true })
@@ -307,7 +307,7 @@ else{
     }
 });
 client.on('guildMemberAdd', member => {
-    const owner = client.users.cache.get(process.env.owner);
+    const owner = client.users.cache.get('532619967837896734');
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     const channel = client.channels.cache.get(process.env.join);
     // Do nothing if the channel wasn't found on this server
@@ -322,7 +322,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-    const owner = client.users.cache.get(process.env.owner);
+    const owner = client.users.cache.get('532619967837896734');
     // Send the message to a designated channel on a server:
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     const channel = client.channels.cache.get(process.env.left);
@@ -346,7 +346,7 @@ client.on('messageDelete', async message => {
 
     let entry = fetchedLogs.entries.first();
 
-    const owner = client.users.cache.get(process.env.owner);
+    const owner = client.users.cache.get('532619967837896734');
     const Log = new Discord.MessageEmbed()
 
     .setColor('#ff5100')
