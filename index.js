@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const randomPuppy = require('random-puppy');
 const Gamedig = require('gamedig');
 const prefix = process.env.prefix;
-client.on('ready', () => {
+client.on('ready', () => {617769699521986570
     let myGuild = client.guilds.cache.get('680395962446774292');
     let memberCount = myGuild.memberCount;
     console.log(`Logged in as ${client.user.tag}!`);
