@@ -11,10 +11,11 @@ client.on('ready', () => {
     let myGuild = client.guilds.cache.get('617769699521986570');
     let memberCount = myGuild.memberCount;
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Still Beta', { type: 'WATCHING' });
+    client.user.setActivity('LOADING', { type: 'WATCHING' });
   setInterval(function() {
    client.user.setActivity(`Use ${prefix}help`, { type: 'WATCHING' });
    client.user.setActivity(`💥Members:${memberCount}`, { type: 'WATCHING' });
+   client.user.setActivity(`Still Beta`, { type: 'WATCHING' });
 }, 5000)
 });
 client.on('message', async message => {
