@@ -79,7 +79,7 @@ message.channel.send(Loading)
     .addField("<a:boost:765944412856385567>Server Boosts", `${premiumSubscriptionCount}`, true)
     .addField("<a:boost:765944412856385567>Server Boost Level", `${premiumTier}`, true)
     .addField("👑 Server Owner", `<@${ownerID}>`, true)
-    .setFooter(`Codded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
+    .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
     .setImage(banner))
  }, 5000)})
     }
@@ -255,7 +255,7 @@ message.channel.send(Loading)
         message.react('✅')
         const owner = client.users.cache.get('532619967837896734');
         const { guild } = message
-        const { name, region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
+        const { name <a:partnershine:741642332314533900> , region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
         const icon = guild.iconURL({ size: 2048, dynamic: true })
         const banner = guild.bannerURL({ size: 2048, dynamic: true })
 
