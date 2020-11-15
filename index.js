@@ -255,13 +255,13 @@ message.channel.send(Loading)
         message.react('✅')
         const owner = client.users.cache.get('532619967837896734');
         const { guild } = message
-        const { name <a:partnershine:741642332314533900> , region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
+        const { name , region, memberCount, roles, channels, emojis, ownerID, verificationLevel, premiumSubscriptionCount, premiumTier, voiceStates } = guild
         const icon = guild.iconURL({ size: 2048, dynamic: true })
         const banner = guild.bannerURL({ size: 2048, dynamic: true })
 
 
         if(!guild.bannerURL()){
-        const nobanner = 'https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg'
+        const nobanner = 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/qoparcana/wallpaper1_large.png'
         const server = new Discord.MessageEmbed()
             .setTitle(`${name}`)
             .setThumbnail(icon)
