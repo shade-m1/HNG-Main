@@ -235,7 +235,7 @@ message.channel.send(Loading)
             .addField("`" + `🔰${prefix}ping` + "`", "**For Get Ping**")
             .addField("`" + `🔰${prefix}server` + "`", "**For Get Server info**")
             .addField("`" + `🔰${prefix}avatar` + "`", "**For Get User Avatar**")
-            .setFooter(`Codded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
+            .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
         message.channel.send(help);
     }
     if (command === 'ping') {
@@ -247,7 +247,7 @@ message.channel.send(Loading)
             .setTitle("**Server Ping**")
             .setColor(randomColor)
             .setDescription(`\n\nThe server ping is${ping}ms <a:gif_7:683287629340737548>`)
-            .setFooter(`Codded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
+            .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
             .setThumbnail("https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/37-512.png")
         message.channel.send(pingm);
     }
@@ -275,7 +275,7 @@ message.channel.send(Loading)
             .addField("<a:boost:753169213744611418>Server Boosts", `${premiumSubscriptionCount}`, true)
             .addField("<:boost:753169213744611418>Server Boost Level", `${premiumTier}`, true)
             .addField("👑 Server Owner", `<@${ownerID}>`, true)
-            .setFooter(`Codded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
+            .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
             .setImage(nobanner)
             message.channel.send(server);
 }
@@ -294,7 +294,7 @@ else{
             .addField("<a:boost:765944412856385567>Server Boosts", `${premiumSubscriptionCount}`, true)
             .addField("<a:boost:765944412856385567>Server Boost Level", `${premiumTier}`, true)
             .addField("👑 Server Owner", `<@${ownerID}>`, true)
-            .setFooter(`Codded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
+            .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
             .setImage(banner)
             message.channel.send(server);
 }
@@ -318,7 +318,7 @@ client.on('guildMemberAdd', member => {
         .setThumbnail(member.user.displayAvatarURL({ size: 2048, dynamic: true }))
         .setAuthor(`User Joined The Server`)
         .setDescription(`Wlcome: ${member}`)
-        .setFooter(`Codded By ${owner.tag}`);
+        .setFooter(`Coded By ${owner.tag}`);
     channel.send(embed);
 });
 
@@ -334,7 +334,7 @@ client.on('guildMemberRemove', member => {
         .setThumbnail(member.user.displayAvatarURL({ size: 2048, dynamic: true }))
         .setAuthor(`User Left The Server`)
         .setDescription(`Bye: ${member}`)
-        .setFooter(`Codded By ${owner.tag}`);
+        .setFooter(`Coded By ${owner.tag}`);
     channel.send(embed);
 });
 client.on('messageDelete', async message => {
