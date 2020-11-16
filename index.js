@@ -246,9 +246,9 @@ message.channel.send(Loading)
         const pingm = new Discord.MessageEmbed()
             .setTitle("**Server Ping**")
             .setColor(randomColor)
-            .setDescription(`\n\nThe server ping is${ping}ms <a:gif_7:683287629340737548>`)
+            .setDescription(`\n\nThe server ping is${ping}ms <a:ping:777911561531818024>`)
             .setFooter(`Coded By ${owner.tag}`, `${owner.displayAvatarURL({size: 2048, dynamic:true})}`)
-            .setThumbnail("https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-1/254000/37-512.png")
+            .setThumbnail("https://www.kindpng.com/picc/m/438-4387212_ping-logo-ping-png-transparent-png.png")
         message.channel.send(pingm);
     }
     if (command === 'server') {
